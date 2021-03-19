@@ -1,0 +1,21 @@
+.cart{
+   padding: 20px;
+    margin-top: 10%;
+    background-color: #F1F1F1; 
+}
+.single-cart{
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:whitesmoke;
+}
+img{
+    width: 150px;
+    height: 200px;
+}
+button{
+    background-color: wheat;
+    color:red;
+    padding: 5px 10px;
+}
