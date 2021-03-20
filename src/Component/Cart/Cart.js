@@ -18,7 +18,7 @@ const Cart = (props) => {
     return (
         <div className="cart">
             
-            <img src={img} alt=""/>
+            <img className="img" src={img} alt=""/>
             <h4>{name}</h4>
             <button onClick={()=>handelClick(id)}>Go Now</button>
         </div>
