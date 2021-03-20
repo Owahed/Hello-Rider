@@ -1,0 +1,31 @@
+.login{
+    text-align: center;
+    padding: 20px;
+    background-color: #303841;
+    width: auto;
+    height: 100vh;
+    
+}
+h3{
+    font-size: xx-large;
+    color: #f0c929;
+}
+label{
+    color: lightgrey;
+}
+form{
+    padding: 30px;
+    
+}
+input{
+    margin-top: 5px;
+    padding: 5px;
+}
+.submit-btn{
+    background-color: #d72323;
+    padding: 6px 16px;
+    border: none;
+    color: #fff;
+    margin-top: 15px !important;
+    border-radius: 3px;
+}

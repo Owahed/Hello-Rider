@@ -14,11 +14,17 @@ import NoMatch from './Component/NoMatch/NoMatch';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Destination from './Component/Destination/Destination';
 import Login from './Component/Login/Login';
+import { createContext, useState } from 'react';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 
+
+export const UserContext =createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser]=useState({});
   return (
-    <div className="App">
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
+      
      
      <Router>
        <Switch>
@@ -31,9 +37,9 @@ function App() {
          <Route path="/header">
             <Header></Header>
          </Route>
-         <Route path="/destination/:id">
+         <PrivateRoute path="/destination/:id">
             <Destination></Destination>
-         </Route>
+         </PrivateRoute>
          <Route path="/login">
            <Login></Login>
          </Route>
@@ -42,7 +48,7 @@ function App() {
          </Route>
        </Switch>
      </Router>
-    </div>
+     </UserContext.Provider>
   );
 }
 
