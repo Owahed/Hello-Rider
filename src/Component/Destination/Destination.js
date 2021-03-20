@@ -29,11 +29,12 @@ const Destination = () => {
         event.preventDefault();
     }
     return (
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex",textAlign:"center"}}>
             {/* <h2>This is Destination {id}</h2> */}
 
-            <h2>{loggedInUser.name}</h2>
+            
             <div className="name">
+            <h2 style={{textAlign:"center"}}>User Name: {loggedInUser.name}</h2>
                 <form onSubmit={handelSubmit}>
                     <h5>Pick from</h5>
 

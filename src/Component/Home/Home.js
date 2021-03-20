@@ -4,7 +4,7 @@ import header from '../../images/Bg.png'
 
 const Home = () => {
     return (
-        <div style={{ backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${header})`,justifyContent:'center',}}>
+        <div style={{ backgroundColor:'#3a4750',height:'100vh'}}>
             <Header></Header>
         </div>
     );

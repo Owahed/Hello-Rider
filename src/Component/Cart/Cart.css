@@ -1,7 +1,10 @@
 .cart{
-   padding: 20px;
+   padding: 30px;
     margin-top: 10%;
     background-color: #F1F1F1; 
+    border-radius: 5px;
+    margin-left: 10px;
+    
 }
 
 img{

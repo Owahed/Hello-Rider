@@ -25,7 +25,7 @@ const Header = () => {
                     <li>
                         <Link to="">Contact</Link>
                     </li>
-                    <li>
+                    <li style={{backgroundColor:"#d72323",padding:"8px",borderRadius:'3px',color:'#fff',textDecoration:'none'}}>
                         <Link to="/login">Login</Link>
                     </li>
                 </ul>
